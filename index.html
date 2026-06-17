@@ -721,7 +721,7 @@
     try {
       const res = await fetch(BACKEND, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-api-key': 'public' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ first_name: first, last_name: last, email, source })
       });
       const data = await res.json();
